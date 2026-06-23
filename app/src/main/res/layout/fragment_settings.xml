@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:paddingBottom="120dp"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/gradient_header"
+            android:paddingHorizontal="24dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_title"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:fontFamily="sans-serif-black"
+                    android:textStyle="bold"
+                    android:lineSpacingExtra="4dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/settings_subtitle"
+                    android:textColor="#CCffffff"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_notifications"
+                android:textColor="@color/textPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/cardStroke"
+                app:cardBackgroundColor="@color/cardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.materialswitch.MaterialSwitch
+                        android:id="@+id/switchLidar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="@string/lidar_notif"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="15sp" />
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/divider" android:layout_marginHorizontal="16dp"/>
+
+                    <com.google.android.material.materialswitch.MaterialSwitch
+                        android:id="@+id/switchIr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="@string/ir_notif"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="15sp" />
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/divider" android:layout_marginHorizontal="16dp"/>
+
+                    <com.google.android.material.materialswitch.MaterialSwitch
+                        android:id="@+id/switchWater"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="@string/water_notif"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_customization"
+                android:textColor="@color/textPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/cardStroke"
+                app:cardBackgroundColor="@color/cardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/btnTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:gravity="center_vertical"
+                        android:clickable="true"
+                        android:focusable="true">
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@android:drawable/ic_menu_gallery"
+                            app:tint="@color/primary"/>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginStart="16dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/setting_theme"
+                                android:textColor="@color/textPrimary"
+                                android:textSize="15sp"/>
+                            <TextView
+                                android:id="@+id/tvCurrentTheme"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="System Default"
+                                android:textColor="@color/textSecondary"
+                                android:textSize="12sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/divider" android:layout_marginHorizontal="16dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/btnLanguage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:gravity="center_vertical"
+                        android:clickable="true"
+                        android:focusable="true">
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@android:drawable/ic_menu_sort_alphabetically"
+                            app:tint="@color/primary"/>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginStart="16dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/setting_lang"
+                                android:textColor="@color/textPrimary"
+                                android:textSize="15sp"/>
+                            <TextView
+                                android:id="@+id/tvCurrentLanguage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="English"
+                                android:textColor="@color/textSecondary"
+                                android:textSize="12sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_legal"
+                android:textColor="@color/textPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnPrivacyPolicy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/cardStroke"
+                app:cardBackgroundColor="@color/cardBackground">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@android:drawable/ic_menu_info_details"
+                        app:tint="@color/primary"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="@string/privacy_policy"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDeleteAccount"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginBottom="24dp"
+                android:text="@string/btn_delete_acc"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:cornerRadius="14dp"
+                app:backgroundTint="@color/statusRed"
+                app:icon="@android:drawable/ic_menu_delete"
+                app:iconGravity="textStart" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

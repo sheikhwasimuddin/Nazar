@@ -1,0 +1,22 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Background circle - light peachy pink -->
+    <path
+        android:fillColor="#FADDCF"
+        android:pathData="M50,50m-46,0a46,46 0,1 1,92 0a46,46 0,1 1,-92 0" />
+
+    <!-- Head circle -->
+    <path
+        android:fillColor="#C1522A"
+        android:pathData="M50,38m-11,0a11,11 0,1 1,22 0a11,11 0,1 1,-22 0" />
+
+    <!-- Body / shoulders shape -->
+    <path
+        android:fillColor="#C1522A"
+        android:pathData="M24,72 Q24,56 50,56 Q76,56 76,72 Q76,78 50,78 Q24,78 24,72Z" />
+
+</vector>

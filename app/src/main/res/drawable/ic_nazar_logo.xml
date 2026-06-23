@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="80dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Outer glow ring -->
+    <path
+        android:fillColor="#336C63FF"
+        android:pathData="M50,5 A45,45 0 1,1 49.99,5 Z" />
+
+    <!-- White circle base -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50,12 A38,38 0 1,1 49.99,12 Z" />
+
+    <!-- Eye outer shape -->
+    <path
+        android:fillColor="#6C63FF"
+        android:pathData="M50,30 C35,30 22,50 22,50 C22,50 35,70 50,70 C65,70 78,50 78,50 C78,50 65,30 50,30 Z" />
+
+    <!-- Eye white -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50,38 A12,12 0 1,1 49.99,38 Z" />
+
+    <!-- Pupil -->
+    <path
+        android:fillColor="#4B44CC"
+        android:pathData="M50,43 A7,7 0 1,1 49.99,43 Z" />
+
+    <!-- Shine dot -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M53,46 A2,2 0 1,1 52.99,46 Z" />
+
+</vector>

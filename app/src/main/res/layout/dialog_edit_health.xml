@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:paddingBottom="32dp"
+        android:background="@drawable/bottom_sheet_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Health Info"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/textPrimary"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Blood Group + Gender row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:hint="Blood Group">
+                <AutoCompleteTextView
+                    android:id="@+id/editBloodGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:hint="Gender">
+                <AutoCompleteTextView
+                    android:id="@+id/editGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <!-- Date of Birth — non-editable, opens DatePickerDialog on click -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Date of Birth"
+            app:startIconDrawable="@android:drawable/ic_menu_today">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editDob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:clickable="true"
+                android:cursorVisible="false" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Height + Weight row — non-editable, open NumberPicker on click -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:hint="Height (cm)">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editHeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:cursorVisible="false" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:hint="Weight (kg)">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:cursorVisible="false" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <!-- Medical Diseases / Conditions -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Medical Diseases / Conditions">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editDisease"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:minLines="2"
+                android:gravity="top|start" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Recommended Medicines -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Recommended Medicines">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editMedicine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:minLines="2"
+                android:gravity="top|start" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Save Button — uses primary colour to match the rest of the app -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSaveHealth"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="24dp"
+            android:text="Save Health Info"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/primary"
+            app:cornerRadius="12dp" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

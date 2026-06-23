@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nazar</string>
+    <string name="dashboard_title">Nazar</string>
+    <string name="dashboard_subtitle">لائیو سینسر ڈیش بورڈ</string>
+    <string name="lidar_title">لائیڈار سینسر</string>
+    <string name="water_title">واٹر سینسر</string>
+    <string name="lidar_value">فاصلہ: %1$s cm</string>
+    <string name="water_value">پانی کی سطح: %1$s</string>
+    <string name="logout">لاگ آؤٹ</string>
+    <string name="update_health_info">صحت کی معلومات اپ ڈیٹ کریں</string>
+    <string name="blood_group">بلڈ گروپ</string>
+    <string name="gender">صنف</string>
+    <string name="date_of_birth">تاریخ پیدائش</string>
+    <string name="height_cm">اونچائی (cm)</string>
+    <string name="weight_kg">وزن (kg)</string>
+    <string name="medical_conditions">طبی بیماریاں / حالات</string>
+    <string name="recommended_medicines">تجویز کردہ ادویات</string>
+    <string name="save_health_info">صحت کی معلومات محفوظ کریں</string>
+
+    <string name="nav_faq">سوالات</string>
+    <string name="nav_map">نقشہ</string>
+    <string name="nav_profile">پروفائل</string>
+    <string name="nav_settings">سیٹنگز</string>
+    <string name="nav_dashboard">ڈیش بورڈ</string>
+
+    <string name="user_name_default">صارف کا نام</string>
+    <string name="user_subtitle">نذر سمارٹ سٹک صارف</string>
+    <string name="personal_info_title">ذاتی معلومات</string>
+    <string name="edit_button">ترمیم کریں</string>
+    <string name="full_name">پورا نام</string>
+    <string name="not_set">سیٹ نہیں ہے</string>
+    <string name="email_address">ای میل ایڈریس</string>
+    <string name="phone_number">فون نمبر</string>
+    <string name="city">شہر</string>
+    <string name="street_address">گلی کا پتہ</string>
+    <string name="health_medical_info">صحت اور طبی معلومات</string>
+    <string name="none_reported">کوئی رپورٹ نہیں</string>
+    <string name="emergency_contacts">ہنگامی رابطے</string>
+    <string name="add_emergency_contact">ہنگامی رابطہ شامل کریں</string>
+    <string name="emergency_contact_1">ہنگامی رابطہ 1</string>
+    <string name="emergency_contact_2">ہنگامی رابطہ 2</string>
+    <string name="emergency_contact_3">ہنگامی رابطہ 3</string>
+    <string name="app_version">نذر v2.0.0 · سمارٹ بلائنڈ سٹک</string>
+    <string name="faq_header_title">مدد اور عمومی سوالات</string>
+    <string name="app_subtitle_alt">سمارٹ بلائنڈ اسٹک ایپلی کیشن</string>
+
+    <string name="app_customization">ایپ کسٹمائزیشن</string>
+    <string name="language">زبان</string>
+    <string name="theme">ایپ تھیم</string>
+    <string name="select_theme">ایپ تھیم منتخب کریں</string>
+    <string name="select_language">زبان منتخب کریں</string>
+    <string name="loading_lang">لوڈ ہو رہا ہے...</string>
+    <string name="notifications">اطلاعات</string>
+    <string name="lidar_alerts">لائیڈار قربت کے الرٹس</string>
+    <string name="ir_alerts">رکاوٹ کی شناخت کے الرٹس</string>
+    <string name="water_alerts">واٹر سینسر الرٹس</string>
+    <string name="privacy_policy">رازداری کی پالیسی</string>
+    <string name="delete_account">اکاؤنٹ حذف کریں</string>
+    <string name="delete_account_title">اکاؤنٹ حذف کریں؟</string>
+    <string name="delete_account_msg">کیا آپ کو یقین ہے؟ اسے واپس نہیں لیا جا سکتا۔</string>
+    <string name="yes">ہاں</string>
+    <string name="no">نہیں</string>
+    <string name="confirm">تصدیق کریں</string>
+    <string name="cancel">منسوخ کریں</string>
+    <string name="type_delete">\'delete\' ٹائپ کریں</string>
+    <string name="type_delete_msg">تصدیق کے لیے \'delete\' کا لفظ ٹائپ کریں۔</string>
+    <string name="cancel_msg">حذف کرنا منسوخ کر دیا گیا۔</string>
+    <string name="final_confirmation">آخری تصدیق</string>
+
+    <string name="nearby_hospitals">قریبی ہسپتال</string>
+    <string name="tap_refresh_search">تلاش کرنے کے لیے ریفریش کریں...</string>
+    <string name="refresh">ریفریش</string>
+    <string name="top_nearest_hospitals">قریبی 10 ہسپتال</string>
+    <string name="tap_pin_navigate">نیویگیٹ کرنے کے لیے پن پر ٹیپ کریں</string>
+
+    <string name="dashboard_telemetry">لائیو سینسر ٹیلی میٹری</string>
+    <string name="live_status">لائیو</string>
+    <string name="system_status">سسٹم کی حیثیت</string>
+    <string name="status_safe_default">حیثیت: محفوظ</string>
+    <string name="sensor_data">سینسر ڈیٹا</string>
+    <string name="lidar_sensor_title">لائیڈار سینسر</string>
+    <string name="placeholder_mm">-- ملی میٹر</string>
+    <string name="distance_measurement">فاصلے کی پیمائش</string>
+    <string name="lidar_detection">لائیڈار کی شناخت</string>
+    <string name="scanning">اسکین ہو رہا ہے...</string>
+    <string name="water_status">پانی کی حیثیت</string>
+    <string name="detecting">شناخت ہو رہی ہے...</string>
+    <string name="water_sensor_title">پانی کا سینسر</string>
+    <string name="placeholder_dash">--</string>
+    <string name="water_level_detection">پانی کی سطح کی شناخت</string>
+    <string name="ir_sensor_detection">آئی آر سینسر کی شناخت</string>
+    <string name="accelerometer">ایکسلرومیٹر</string>
+    <string name="motion_tilt_sensor">موشن / ٹلٹ سینسر</string>
+    <string name="live_monitoring">لائیو مانیٹرنگ</string>
+
+    <string name="axis_x">X</string>
+    <string name="axis_y">Y</string>
+    <string name="axis_z">Z</string>
+    <string name="unit_ms2">m/s²</string>
+    <string name="overall_magnitude">مجموعی شدت:</string>
+    <string name="real_time_telemetry">ریئل ٹائم ٹیلی میٹری</string>
+    <string name="lidar_distance_mm">لائیڈار کا فاصلہ (ملی میٹر)</string>
+    <string name="water_level">پانی کی سطح</string>
+    <string name="accel_xyz">ایکسلرومیٹر (X · Y · Z)</string>
+
+    <string name="settings_title">ترتیبات</string>
+    <string name="settings_subtitle">ترجیحات اور سیکیورٹی</string>
+    <string name="label_notifications">سینسر کی اطلاعات</string>
+    <string name="lidar_notif">لائیڈار رکاوٹ کی شناخت</string>
+    <string name="ir_notif">آئی آر قربت کے الرٹس</string>
+    <string name="water_notif">پانی کی شناخت</string>
+    <string name="label_customization">ایپ کسٹمائزیشن</string>
+    <string name="setting_theme">ایپ تھیم</string>
+    <string name="setting_lang">زبان</string>
+    <string name="label_legal">قانونی</string>
+    <string name="btn_delete_acc">اکاؤنٹ حذف کریں</string>
+
+    <string name="privacy_policy_text">
+    <![CDATA[
+    <b>رازداری کی پالیسی</b><br><br>
+    ہم اپنے صارفین کی رازداری کا احترام کرتے ہیں اور آپ کی فراہم کردہ کسی بھی ذاتی معلومات کی حفاظت کے لیے پرعزم ہیں۔ یہ پالیسی بتاتی ہے کہ ہم آپ کا ڈیٹا کیسے جمع اور محفوظ کرتے ہیں۔<br><br>
+
+    <b>1. معلومات جو ہم جمع کرتے ہیں:</b><br>
+    • نام<br>
+    • ای میل پتہ<br>
+    • رابطہ نمبر<br>
+    • آئی پی ایڈریس<br>
+    • ڈیوائس کی تفصیلات<br>
+    • استعمال کا ڈیٹا<br><br>
+
+    <b>2. معلومات کا استعمال:</b><br>
+    • صارف کے تجربے کو بہتر بنانا<br>
+    • ذاتی مواد فراہم کرنا<br>
+    • ایپلی کیشن کی فعالیت میں اضافہ کرنا<br><br>
+
+    <b>3. اسٹوریج اور سیکیورٹی:</b><br>
+    صارف کا تمام ڈیٹا محفوظ طریقے سے اسٹور کیا جاتا ہے۔ ہم آپ کی رضامندی کے بغیر آپ کی معلومات کسی کے ساتھ شیئر نہیں کرتے۔<br><br>
+
+    <b>4. کوکیز:</b><br>
+    ہم خدمات کو بہتر بنانے کے لیے کوکیز کا استعمال کرتے ہیں۔ آپ اپنی ڈیوائس کی ترتیبات کے ذریعے انہیں کنٹرول کر سکتے ہیں۔<br><br>
+
+    <b>5. آپ کے حقوق:</b><br>
+    آپ کو اپنے ذاتی ڈیٹا تک رسائی، ترمیم یا اسے حذف کرنے کی درخواست کرنے کا حق ہے۔<br><br>
+
+    <b>6. معاہدہ:</b><br>
+    ہماری خدمات استعمال کر کے، آپ اس رازداری کی پالیسی سے اتفاق کرتے ہیں۔<br><br>
+
+    © جملہ حقوق محفوظ ہیں۔<br>
+
+    ]]>
+</string>
+</resources>

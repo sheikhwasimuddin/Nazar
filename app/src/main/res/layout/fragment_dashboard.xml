@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:paddingBottom="120dp"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@drawable/gradient_header"
+            android:paddingHorizontal="24dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nav_dashboard"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:fontFamily="sans-serif-black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/dashboard_telemetry"
+                    android:textColor="#CCffffff"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/liveBadgeContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/badge_live"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <View
+                    android:id="@+id/liveBadgeDot"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:background="@drawable/status_dot_green"
+                    android:backgroundTint="@color/statusGreen" />
+
+                <TextView
+                    android:id="@+id/liveBadgeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:text="@string/live_status"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.1" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/cardStroke"
+                app:cardBackgroundColor="@color/cardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="18dp"
+                    android:gravity="center_vertical">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/primaryLight">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:src="@android:drawable/ic_dialog_info"
+                            app:tint="@color/primary" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="14dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/system_status"
+                            android:textColor="@color/textSecondary"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/emergencyText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/status_safe_default"
+                            android:textColor="@color/statusGreen"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/statusIndicator"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:background="@drawable/status_dot_green"
+                        android:backgroundTint="@color/statusGreen" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="22dp"
+                    android:background="@color/primary"
+                    android:layout_marginEnd="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sensor_data"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/cardStroke"
+                app:cardBackgroundColor="@color/cardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="@color/primaryLight">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:src="@android:drawable/ic_menu_compass"
+                            app:tint="@color/primary" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="14dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lidar_sensor_title"
+                            android:textColor="@color/textSecondary"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/lidarText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/placeholder_mm"
+                            android:textColor="@color/primary"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/distance_measurement"
+                            android:textColor="@color/textHint"
+                            android:textSize="11sp"
+                            android:layout_marginTop="2dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="#E3F2FD"
+                app:cardBackgroundColor="@color/cardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/lidarStatusIconCard"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="#E3F2FD">
+                        <ImageView
+                            android:id="@+id/lidarStatusIcon"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:src="@android:drawable/ic_menu_search"
+                            app:tint="@color/primary" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="14dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lidar_detection"
+                            android:textColor="@color/textSecondary"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/lidarStatusText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/scanning"
+                            android:textColor="@color/primary"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="#E0F7FA"
+                app:cardBackgroundColor="@color/cardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/waterStatusIconCard"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="#E0F7FA">
+                        <ImageView
+                            android:id="@+id/waterStatusIcon"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:src="@android:drawable/ic_menu_info_details"
+                            app:tint="@color/accent" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="14dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/water_status"
+                            android:textColor="@color/textSecondary"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/waterStatusText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/detecting"
+                            android:textColor="@color/statusGreen"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="#E0F7FA"
+                app:cardBackgroundColor="@color/cardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="#E0F7FA">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:src="@android:drawable/ic_menu_myplaces"
+                            app:tint="@color/accent" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="14dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/water_sensor_title"
+                            android:textColor="@color/textSecondary"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/waterText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/placeholder_dash"
+                            android:textColor="@color/accent"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/water_level_detection"
+                            android:textColor="@color/textHint"
+                            android:textSize="11sp"
+                            android:layout_marginTop="2dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="#FFCDD2"
+                app:cardBackgroundColor="@color/cardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/obstacleIconCard"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="#FFEBEE">
+                        <ImageView
+                            android:id="@+id/obstacleIcon"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:src="@android:drawable/ic_dialog_alert"
+                            app:tint="@color/statusRed" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="14dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ir_sensor_detection"
+                            android:textColor="@color/textSecondary"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/obstacleText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/detecting"
+                            android:textColor="@color/statusRed"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="4dp">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="22dp"
+                    android:background="@color/accent"
+                    android:layout_marginEnd="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/accelerometer"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="#E0F7FA"
+                app:cardBackgroundColor="@color/cardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="0dp"
+                        app:cardBackgroundColor="#E0F2F1">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:src="@android:drawable/ic_menu_compass"
+                            app:tint="@color/accent" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="14dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/motion_tilt_sensor"
+                            android:textColor="@color/textSecondary"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/accelStatusText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/live_monitoring"
+                            android:textColor="@color/textPrimary"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:columnCount="3"
+                android:alignmentMode="alignMargins"
+                android:columnOrderPreserved="false">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp"
+                    app:strokeWidth="1dp"
+                    app:strokeColor="#E0F7FA"
+                    app:cardBackgroundColor="@color/cardBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="12dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/axis_x"
+                            android:textColor="@color/accent"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/accelXText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/placeholder_dash"
+                            android:textColor="@color/textPrimary"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="4dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/unit_ms2"
+                            android:textColor="@color/textHint"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp"
+                    app:strokeWidth="1dp"
+                    app:strokeColor="#E0F7FA"
+                    app:cardBackgroundColor="@color/cardBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="12dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/axis_y"
+                            android:textColor="@color/accent"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/accelYText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/placeholder_dash"
+                            android:textColor="@color/textPrimary"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="4dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/unit_ms2"
+                            android:textColor="@color/textHint"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp"
+                    app:strokeWidth="1dp"
+                    app:strokeColor="#E0F7FA"
+                    app:cardBackgroundColor="@color/cardBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="12dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/axis_z"
+                            android:textColor="@color/accent"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/accelZText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/placeholder_dash"
+                            android:textColor="@color/textPrimary"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="4dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/unit_ms2"
+                            android:textColor="@color/textHint"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </GridLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginHorizontal="5dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="#E0F7FA"
+                app:cardBackgroundColor="@color/cardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/overall_magnitude"
+                        android:textColor="@color/textSecondary"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="8dp" />
+
+                    <TextView
+                        android:id="@+id/accelMagText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/placeholder_dash"
+                        android:textColor="@color/accent"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="22dp"
+                    android:background="@color/primary"
+                    android:layout_marginEnd="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/real_time_telemetry"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/cardStroke"
+                app:cardBackgroundColor="@color/cardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="8dp">
+
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:background="@drawable/status_dot_green"
+                            android:backgroundTint="@color/primary"
+                            android:layout_marginEnd="8dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lidar_distance_mm"
+                            android:textColor="@color/textPrimary"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/lidarChart"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="#E0F7FA"
+                app:cardBackgroundColor="@color/cardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="8dp">
+
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:background="@drawable/status_dot_green"
+                            android:backgroundTint="@color/accent"
+                            android:layout_marginEnd="8dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/water_level"
+                            android:textColor="@color/textPrimary"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/waterChart"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="#E0F7FA"
+                app:cardBackgroundColor="@color/cardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="12dp">
+
+                        <View
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:background="@drawable/status_dot_green"
+                            android:backgroundTint="@color/accent"
+                            android:layout_marginEnd="8dp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/accel_xyz"
+                            android:textColor="@color/textPrimary"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/accelChart"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:alpha="1.0" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

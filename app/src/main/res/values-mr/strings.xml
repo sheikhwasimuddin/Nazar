@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nazar</string>
+    <string name="dashboard_title">Nazar</string>
+    <string name="dashboard_subtitle">लाइव्ह सेन्सर डॅशबोर्ड</string>
+    <string name="lidar_title">LiDAR सेन्सर</string>
+    <string name="water_title">वॉटर सेन्सर</string>
+    <string name="lidar_value">अंतर: %1$s cm</string>
+    <string name="water_value">पाण्याची पातळी: %1$s</string>
+    <string name="logout">लॉग आउट</string>
+    <string name="update_health_info">आरोग्य माहिती अपडेट करा</string>
+    <string name="blood_group">रक्तगट</string>
+    <string name="gender">लिंग</string>
+    <string name="date_of_birth">जन्म तारीख</string>
+    <string name="height_cm">उंची (cm)</string>
+    <string name="weight_kg">वजन (kg)</string>
+    <string name="medical_conditions">वैद्यकीय आजार / परिस्थिती</string>
+    <string name="recommended_medicines">शिफारस केलेली औषधे</string>
+    <string name="save_health_info">आरोग्य माहिती जतन करा</string>
+
+    <string name="nav_faq">सामान्य प्रश्न</string>
+    <string name="nav_map">नकाशा</string>
+    <string name="nav_profile">प्रोफाइल</string>
+    <string name="nav_settings">सेटिंग्ज</string>
+    <string name="nav_dashboard">डॅशबोर्ड</string>
+
+    <string name="user_name_default">वापरकर्त्याचे नाव</string>
+    <string name="user_subtitle">नझर स्मार्ट स्टिक वापरकर्ता</string>
+    <string name="personal_info_title">वैयक्तिक माहिती</string>
+    <string name="edit_button">संपादित करा</string>
+    <string name="full_name">पूर्ण नाव</string>
+    <string name="not_set">सेट केलेले नाही</string>
+    <string name="email_address">ईमेल पत्ता</string>
+    <string name="phone_number">फोन नंबर</string>
+    <string name="city">शहर</string>
+    <string name="street_address">रस्त्याचा पत्ता</string>
+    <string name="health_medical_info">आरोग्य आणि वैद्यकीय माहिती</string>
+    <string name="none_reported">काहीही नोंदवलेले नाही</string>
+    <string name="emergency_contacts">आपत्कालीन संपर्क</string>
+    <string name="add_emergency_contact">आपत्कालीन संपर्क जोडा</string>
+    <string name="emergency_contact_1">आपत्कालीन संपर्क 1</string>
+    <string name="emergency_contact_2">आपत्कालीन संपर्क 2</string>
+    <string name="emergency_contact_3">आपत्कालीन संपर्क 3</string>
+    <string name="app_version">नझर v2.0.0 · स्मार्ट ब्लाइंड स्टिक</string>
+
+    <string name="faq_header_title">मदत आणि वारंवार विचारले जाणारे प्रश्न</string>
+    <string name="app_subtitle_alt">स्मार्ट ब्लाइंड स्टिक ॲप्लिकेशन</string>
+
+    <string name="app_customization">ॲप कस्टमायझेशन</string>
+    <string name="language">भाषा</string>
+    <string name="theme">ॲप थीम</string>
+    <string name="select_theme">ॲप थीम निवडा</string>
+    <string name="select_language">भाषा निवडा</string>
+    <string name="loading_lang">लोड होत आहे...</string>
+    <string name="notifications">सूचना</string>
+    <string name="lidar_alerts">LiDAR सानिध्य अलर्ट</string>
+    <string name="ir_alerts">अडथळा ओळखण्याचे अलर्ट</string>
+    <string name="water_alerts">वॉटर सेन्सर अलर्ट</string>
+    <string name="privacy_policy">गोपनीयता धोरण</string>
+    <string name="delete_account">खाते हटवा</string>
+    <string name="delete_account_title">खाते हटवायचे का?</string>
+    <string name="delete_account_msg">तुम्हाला खात्री आहे का? हे पूर्ववत केले जाऊ शकत नाही।</string>
+    <string name="yes">होय</string>
+    <string name="no">नाही</string>
+    <string name="confirm">पुष्टी करा</string>
+    <string name="cancel">रद्द करा</string>
+    <string name="type_delete">\'delete\' टाइप करा</string>
+    <string name="type_delete_msg">पुष्टी करण्यासाठी \'delete\' शब्द टाइप करा।</string>
+    <string name="cancel_msg">हटवणे रद्द केले।</string>
+    <string name="final_confirmation">अंतिम पुष्टीकरण</string>
+
+    <string name="nearby_hospitals">जवळील रुग्णालये</string>
+    <string name="tap_refresh_search">शोधण्यासाठी रिफ्रेश करा...</string>
+    <string name="refresh">रिफ्रेश</string>
+    <string name="top_nearest_hospitals">सर्वात जवळची १० रुग्णालये</string>
+    <string name="tap_pin_navigate">नेव्हिगेट करण्यासाठी पिनवर टॅप करा</string>
+
+    <string name="dashboard_telemetry">थेट सेन्सर टेलिमेट्री</string>
+    <string name="live_status">थेट</string>
+    <string name="system_status">सिस्टम स्थिती</string>
+    <string name="status_safe_default">स्थिती: सुरक्षित</string>
+    <string name="sensor_data">सेन्सर डेटा</string>
+    <string name="lidar_sensor_title">LiDAR सेन्सर</string>
+    <string name="placeholder_mm">-- मिमी</string>
+    <string name="distance_measurement">अंतर मोजमाप</string>
+    <string name="lidar_detection">LiDAR शोध</string>
+    <string name="scanning">स्कॅनिंग...</string>
+    <string name="water_status">पाण्याची स्थिती</string>
+    <string name="detecting">शोधत आहे...</string>
+    <string name="water_sensor_title">पाणी सेन्सर</string>
+    <string name="placeholder_dash">--</string>
+    <string name="water_level_detection">पाण्याची पातळी शोधणे</string>
+    <string name="ir_sensor_detection">IR सेन्सर शोध</string>
+    <string name="accelerometer">एक्सेलेरोमीटर</string>
+    <string name="motion_tilt_sensor">मोशन / टिल्ट सेन्सर</string>
+    <string name="live_monitoring">लाइव्ह मॉनिटरिंग</string>
+
+    <string name="axis_x">X</string>
+    <string name="axis_y">Y</string>
+    <string name="axis_z">Z</string>
+    <string name="unit_ms2">m/s²</string>
+    <string name="overall_magnitude">एकूण परिमाण:</string>
+    <string name="real_time_telemetry">रिअल-टाइम टेलिमेट्री</string>
+    <string name="lidar_distance_mm">LiDAR अंतर (मिमी)</string>
+    <string name="water_level">पाण्याची पातळी</string>
+    <string name="accel_xyz">एक्सेलेरोमीटर (X · Y · Z)</string>
+
+    <string name="settings_title">सेटिंग्ज</string>
+    <string name="settings_subtitle">पसंती आणि सुरक्षा</string>
+    <string name="label_notifications">सेन्सर सूचना</string>
+    <string name="lidar_notif">LiDAR अडथळा शोध</string>
+    <string name="ir_notif">IR सानिध्य अलर्ट</string>
+    <string name="water_notif">पाणी साचल्याचा इशारा</string>
+    <string name="label_customization">ॲप कस्टमायझेशन</string>
+    <string name="setting_theme">ॲप थीम</string>
+    <string name="setting_lang">भाषा</string>
+    <string name="label_legal">कायदेशीर</string>
+    <string name="btn_delete_acc">खाते हटवा</string>
+
+    <string name="privacy_policy_text">
+    <![CDATA[
+    <b>गोपनीयता धोरण</b><br><br>
+    आम्ही आमच्या वापरकर्त्यांच्या गोपनीयतेचा आदर करतो आणि तुम्ही शेअर केलेली कोणतीही वैयक्तिक माहिती सुरक्षित ठेवण्यासाठी वचनबद्ध आहोत. हे धोरण आम्ही तुमचा डेटा कसा गोळा करतो आणि सुरक्षित करतो हे स्पष्ट करते.<br><br>
+
+    <b>१. आम्ही गोळा केलेली माहिती:</b><br>
+    • नाव<br>
+    • ईमेल पत्ता<br>
+    • संपर्क क्रमांक<br>
+    • आयपी पत्ता<br>
+    • डिव्हाइस तपशील<br>
+    • वापर डेटा<br><br>
+
+    <b>२. आम्ही माहितीचा वापर कसा करतो:</b><br>
+    • वापरकर्ता अनुभव सुधारणे<br>
+    • वैयक्तिकृत सामग्री प्रदान करणे<br>
+    • ॲप्लिकेशनची कार्यक्षमता वाढवणे<br><br>
+
+    <b>३. स्टोरेज आणि सुरक्षा:</b><br>
+    सर्व वापरकर्ता डेटा सुरक्षितपणे संग्रहित आहे. कायद्याने आवश्यक असल्याशिवाय आम्ही तुमची माहिती कोणाशीही शेअर करत नाही.<br><br>
+
+    <b>४. कुकीज:</b><br>
+    आम्ही सेवा सुधारण्यासाठी कुकीज वापरतो. तुम्ही तुमच्या डिव्हाइस सेटिंग्जद्वारे त्या नियंत्रित करू शकता.<br><br>
+
+    <b>५. तुमचे अधिकार:</b><br>
+    तुम्हाला तुमच्या डेटामध्ये प्रवेश करण्याचा, बदल करण्याचा किंवा तो हटवण्याची विनंती करण्याचा अधिकार आहे.<br><br>
+
+    <b>६. करार:</b><br>
+    आमच्या सेवा वापरून, तुम्ही या गोपनीयता धोरणाशी सहमत आहात.<br><br>
+
+    © सर्व हक्क राखीव.<br>
+
+    ]]>
+</string>
+
+</resources>

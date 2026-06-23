@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#3F51B5"
+        android:strokeWidth="2"
+        android:strokeLineJoin="round"
+        android:pathData="M 19.43,12.98 C 19.47,12.66 19.5,12.34 19.5,12 C 19.5,11.66 19.47,11.34 19.43,11.02 L 21.54,9.37 C 21.73,9.22 21.78,8.95 21.66,8.73 L 19.66,5.27 C 19.54,5.05 19.27,4.96 19.05,5.05 L 16.56,6.05 C 16.04,5.65 15.48,5.32 14.87,5.07 L 14.49,2.42 C 14.46,2.18 14.25,2 14,2 H 10 C 9.75,2 9.54,2.18 9.51,2.42 L 9.13,5.07 C 8.52,5.32 7.96,5.65 7.44,6.05 L 4.95,5.05 C 4.73,4.96 4.46,5.05 4.34,5.27 L 2.34,8.73 C 2.21,8.95 2.27,9.22 2.46,9.37 L 4.57,11.02 C 4.53,11.34 4.5,11.66 4.5,12 C 4.5,12.34 4.53,12.66 4.57,12.98 L 2.46,14.63 C 2.27,14.78 2.21,15.05 2.34,15.27 L 4.34,18.73 C 4.46,18.95 4.73,19.04 4.95,18.95 L 7.44,17.95 C 7.96,18.35 8.52,18.68 9.13,18.93 L 9.51,21.58 C 9.54,21.82 9.75,22 10,22 H 14 C 14.25,22 14.46,21.82 14.49,21.58 L 14.87,18.93 C 15.48,18.68 16.04,18.35 16.56,17.95 L 19.05,18.95 C 19.27,19.04 19.54,18.95 19.66,18.73 L 21.66,15.27 C 21.78,15.05 21.73,14.78 21.54,14.63 L 19.43,12.98 Z" />
+
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M 12,12 L 12,7 A 5,5 0 0,0 7,12 Z" />
+
+    <path
+        android:fillColor="#FF9800"
+        android:pathData="M 12,12 L 17,12 A 5,5 0 0,0 12,7 Z" />
+
+    <path
+        android:fillColor="#FFCA28"
+        android:pathData="M 12,12 L 12,17 A 5,5 0 0,0 17,12 Z" />
+
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M 12,12 L 7,12 A 5,5 0 0,0 12,17 Z" />
+
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 12,14.5 A 2.5,2.5 0 1,0 12,9.5 A 2.5,2.5 0 1,0 12,14.5 Z" />
+
+    <path
+        android:fillColor="#3F51B5"
+        android:pathData="M 12,13 A 1,1 0 1,0 12,11 A 1,1 0 1,0 12,13 Z" />
+
+</vector>

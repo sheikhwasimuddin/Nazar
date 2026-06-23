@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Blurred glass base -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#EEFFFFFF" />
+            <corners android:radius="0dp" />
+        </shape>
+    </item>
+
+    <!-- Top shimmer line -->
+    <item android:top="0dp" android:bottom="0dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="90"
+                android:startColor="#55FFFFFF"
+                android:centerColor="#00FFFFFF"
+                android:endColor="#00FFFFFF"
+                android:centerX="0.15" />
+        </shape>
+    </item>
+
+</layer-list>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1084085489842",
+    "firebase_url": "https://smartblindstick-a3e96-default-rtdb.firebaseio.com",
+    "project_id": "smartblindstick-a3e96",
+    "storage_bucket": "smartblindstick-a3e96.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1084085489842:android:c24d7201f3c0fc6a9279ab",
+        "android_client_info": {
+          "package_name": "com.example.smartblindstick"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1084085489842-rbh7oiqjoj8q5k7soi4t09up210t3ugb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.smartblindstick",
+            "certificate_hash": "b4a485cab682582f745fc28bdc3540f274a280aa"
+          }
+        },
+        {
+          "client_id": "1084085489842-7r4sqivngmtvs7716pkgsojbpbuek11e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaKPP5EiCkg0EcQLQZfXAgJYJNfOXIhY0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1084085489842-7r4sqivngmtvs7716pkgsojbpbuek11e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

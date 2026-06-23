@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#818CF8</color> <color name="primaryDark">#4F46E5</color>
+    <color name="primaryLight">#1E1B4B</color> <color name="accent">#22D3EE</color>
+    <color name="accentDark">#0891B2</color>
+
+    <color name="gradientStart">#4F46E5</color>
+    <color name="gradientEnd">#0891B2</color>
+
+    <color name="backgroundColor">#0F172A</color> <color name="cardBackground">#1E293B</color> <color name="surfaceColor">#1E293B</color>
+    <color name="navBackground">#0F172A</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="textPrimary">#F8FAFC</color>
+    <color name="textSecondary">#94A3B8</color>
+    <color name="textHint">#475569</color>
+
+    <color name="statusGreen">#34D399</color>
+    <color name="statusRed">#F87171</color>
+    <color name="statusYellow">#FBBF24</color>
+    <color name="statusBlue">#60A5FA</color>
+
+    <color name="cardStroke">#334155</color>
+    <color name="divider">#334155</color>
+</resources>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Nazar</string>
+
+    <string name="nav_faq">FAQs</string>
+    <string name="nav_map">Map</string>
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_settings">Settings</string>
+
+    <string name="dashboard_title">Nazar</string>
+    <string name="dashboard_subtitle">Live Sensor Dashboard</string>
+    <string name="lidar_title">LiDAR Sensor</string>
+    <string name="water_title">Water Sensor</string>
+    <string name="lidar_value">Distance: %1$s cm</string>
+    <string name="water_value">Water Level: %1$s</string>
+
+    <string name="update_health_info">Update Health Info</string>
+    <string name="blood_group">Blood Group</string>
+    <string name="gender">Gender</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="height_cm">Height (cm)</string>
+    <string name="weight_kg">Weight (kg)</string>
+    <string name="medical_conditions">Medical Diseases / Conditions</string>
+    <string name="recommended_medicines">Recommended Medicines</string>
+    <string name="save_health_info">Save Health Info</string>
+
+    <string name="user_name_default">User Name</string>
+    <string name="user_subtitle">Nazar Smart Stick User</string>
+    <string name="personal_info_title">Personal Information</string>
+    <string name="edit_button">Edit</string>
+    <string name="full_name">FULL NAME</string>
+    <string name="not_set">Not Set</string>
+    <string name="email_address">EMAIL ADDRESS</string>
+    <string name="phone_number">PHONE NUMBER</string>
+    <string name="city">CITY</string>
+    <string name="street_address">STREET ADDRESS</string>
+    <string name="health_medical_info">Health &amp; Medical Info</string>
+    <string name="none_reported">None reported</string>
+    <string name="emergency_contacts">Emergency Contacts</string>
+    <string name="add_emergency_contact">Add Emergency Contact</string>
+    <string name="emergency_contact_1">Emergency Contact 1</string>
+    <string name="emergency_contact_2">Emergency Contact 2</string>
+    <string name="emergency_contact_3">Emergency Contact 3</string>
+    <string name="logout">Sign Out</string>
+    <string name="app_version">Nazar v2.0.0 · Smart Blind Stick</string>
+
+    <string name="faq_header_title">Help &amp; FAQs</string>
+    <string name="app_subtitle_alt">Smart Blind Stick Application</string>
+
+    <string name="app_customization">APP CUSTOMIZATION</string>
+    <string name="language">Language</string>
+    <string name="theme">App Theme</string>
+    <string name="select_theme">Select App Theme</string>
+    <string name="select_language">Select Language</string>
+    <string name="loading_lang">Loading...</string>
+    <string name="notifications">NOTIFICATIONS</string>
+    <string name="lidar_alerts">LiDAR Proximity Alerts</string>
+    <string name="ir_alerts">Obstacle Detection Alerts</string>
+    <string name="water_alerts">Water Sensor Alerts</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="delete_account_title">Delete Account?</string>
+    <string name="delete_account_msg">Are you sure? This cannot be undone.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="type_delete">Type delete</string>
+    <string name="type_delete_msg">Type the word delete to confirm wipe.</string>
+    <string name="cancel_msg">Deletion cancelled.</string>
+    <string name="final_confirmation">Final Confirmation</string>
+
+    <string name="nearby_hospitals">Nearby Hospitals</string>
+    <string name="tap_refresh_search">Tap refresh to search...</string>
+    <string name="refresh">Refresh</string>
+    <string name="top_nearest_hospitals">Top 10 Nearest Hospitals</string>
+    <string name="tap_pin_navigate">Tap any pin to navigate</string>
+
+    <string name="dashboard_telemetry">Live Sensor Telemetry</string>
+    <string name="live_status">LIVE</string>
+    <string name="system_status">System Status</string>
+    <string name="status_safe_default">Status: Safe</string>
+    <string name="sensor_data">Sensor Data</string>
+    <string name="lidar_sensor_title">LiDAR Sensor</string>
+    <string name="placeholder_mm">-- mm</string>
+    <string name="distance_measurement">Distance measurement</string>
+    <string name="lidar_detection">LiDAR Detection</string>
+    <string name="scanning">Scanning...</string>
+    <string name="water_status">Water Status</string>
+    <string name="detecting">Detecting...</string>
+    <string name="water_sensor_title">Water Sensor</string>
+    <string name="placeholder_dash">--</string>
+    <string name="water_level_detection">Water level detection</string>
+    <string name="ir_sensor_detection">IR Sensor Detection</string>
+    <string name="accelerometer">Accelerometer</string>
+    <string name="motion_tilt_sensor">Motion / Tilt Sensor</string>
+    <string name="live_monitoring">Live Monitoring</string>
+
+    <string name="axis_x">X</string>
+    <string name="axis_y">Y</string>
+    <string name="axis_z">Z</string>
+    <string name="unit_ms2">m/s²</string>
+    <string name="overall_magnitude">Overall Magnitude:</string>
+    <string name="real_time_telemetry">Real-time Telemetry</string>
+    <string name="lidar_distance_mm">LiDAR Distance (mm)</string>
+    <string name="water_level">Water Level</string>
+    <string name="accel_xyz">Accelerometer (X · Y · Z)</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="settings_subtitle">Preferences &amp; Security</string>
+    <string name="label_notifications">Sensor Notifications</string>
+    <string name="lidar_notif">Lidar Obstacle Detection</string>
+    <string name="ir_notif">IR Proximity Alerts</string>
+    <string name="water_notif">Water Puddle Detection</string>
+    <string name="label_customization">App Customization</string>
+    <string name="setting_theme">App Theme</string>
+    <string name="setting_lang">Language</string>
+    <string name="label_legal">Legal</string>
+    <string name="btn_delete_acc">Delete Account</string>
+    <string name="privacy_policy_text">
+    <![CDATA[
+    <b>Privacy Policy</b><br><br>
+    We value and respect the privacy of our users and are committed to protecting any personal information you share with us. This policy explains how we collect, use, and protect your data.<br><br>
+
+    <b>1. Information We Collect:</b><br>
+    • Name<br>
+    • Email address<br>
+    • Contact number<br>
+    • IP address<br>
+    • Device details<br>
+    • Usage data<br><br>
+
+    <b>2. How We Use Information:</b><br>
+    • Improve user experience<br>
+    • Provide personalized content<br>
+    • Enhance application functionality<br><br>
+
+    <b>3. Storage & Security:</b><br>
+    All user data is securely stored and protected. We do not share your information with third parties without your consent, except where required by law.<br><br>
+
+    <b>4. Cookies:</b><br>
+    We use cookies to track behavior and improve services. You can control or disable these through your device settings.<br><br>
+
+    <b>5. Your Rights:</b><br>
+    You have the right to access your personal data, modify your information, or request deletion.<br><br>
+
+    <b>6. Agreement:</b><br>
+    By using our services, you agree to this Privacy Policy.<br><br>
+
+    If you have any questions, please contact us.<br><br>
+
+    © All rights reserved.<br>
+    ]]>
+</string>
+
+</resources>
